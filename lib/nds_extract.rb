@@ -58,6 +58,9 @@ def movies_with_director_key(name, movies_collection)
   while index < movies_collection.length do 
     # movies_collection[index][:director_name] = name
     # new_movies_collection << movies_collection[index]
+    
+    movies_data = movies_collection[index]
+    new_movies_collection << movie_with_director_name(name,movies_data)
     index += 1 
   end
   
