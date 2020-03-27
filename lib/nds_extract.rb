@@ -112,14 +112,11 @@ def movies_with_directors_set(source)
   
   # { :name => "A", :movies => [{ :title => "Test" }] }
   # becomes... [[{:title => "Test", :director_name => "A"}], ...[], ... []]
-  # result = source[index]
-      # [[]]  
-      
-      # result[index][movies_index][:director_name] = {}
-      
-      # result[index] = []
-      # result[index][movies_index] = {}
   
+  # [[]]  
+  # result[index] = []
+  # result[index][movies_index] = []
+  # result[index][movies_index][:director_name] = {}
   
   result = []
   index = 0 
